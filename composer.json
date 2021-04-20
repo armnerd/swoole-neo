@@ -1,0 +1,27 @@
+{
+    "name": "NeoSwoole",
+    "type": "Application",
+    "description": "Async task base on Swoole, build in route and SQL builder",
+    "repositories": {
+      "packagist": {
+        "type": "composer",
+        "url": "https://mirrors.aliyun.com/composer/"
+      }
+    },
+    "autoload": {
+        "files": [
+          "app/Config/Config.php",
+          "app/Neo/Log.php",
+          "app/Neo/Database/NeoDatabase.php",
+          "app/Neo/Database/NeoDatabaseMySQL.php",
+          "app/Neo/Database/NeoDatabaseMySQLExplain.php",
+          "app/Neo/Pool.php",
+          "app/Neo/Model.php"
+        ],
+        "classmap": [
+          "app/Controllers",
+          "app/Services",
+          "app/Models"
+        ]
+      }
+}

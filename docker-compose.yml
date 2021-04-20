@@ -1,0 +1,9 @@
+version: '2.2'
+services:
+    phalcon-swoole:
+        build: ./docker
+        container_name: neo-swoole
+        ports:
+            - "9501:9501"
+        volumes:
+            - /Users/fanzhen/data/mine/NeoSwoole:/work/NeoSwoole
